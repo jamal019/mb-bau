@@ -1,6 +1,6 @@
 export const siteConfig = {
   siteName: 'MB Bauausführungen GmbH',
-  domain: 'https://mb-bauausfuehrungen.de',
+  domain: 'https://jamal019.github.io/mb-bau',
   defaultTitle: 'MB Bauausführungen GmbH | Bauunternehmen in Berlin',
   defaultDescription:
     'MB Bauausführungen GmbH ist Ihr Partner für Putz- und Estricharbeiten sowie Fassadenarbeiten in Berlin. Zuverlässig, termintreu und aus einer Hand.',
