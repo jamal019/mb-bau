@@ -21,19 +21,22 @@ export function MobileCallButton() {
     <Link
       href="/kontakt"
       aria-label="Zur Kontaktseite"
-      className={`fixed z-40 h-12 w-12 rounded-full bg-brand-500 text-white shadow-soft transition-all duration-200 md:hidden ${
+      className={`fixed left-1/2 z-40 -translate-x-1/2 rounded-full bg-brand-600 px-5 py-3 text-white shadow-[0_10px_28px_rgba(15,23,42,0.3)] transition-all duration-200 md:hidden ${
         isVisible
-          ? 'pointer-events-auto bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 opacity-95'
-          : 'pointer-events-none bottom-0 right-4 translate-y-4 opacity-0'
+          ? 'pointer-events-auto bottom-[max(0.9rem,env(safe-area-inset-bottom))] opacity-100'
+          : 'pointer-events-none bottom-0 opacity-0'
       }`}
     >
+      <span className="inline-flex items-center gap-2 text-sm font-semibold">
+        <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true">
+          <path
+            d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.08.36 2.23.55 3.42.55a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4.2a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.19.19 2.34.55 3.42a1 1 0 0 1-.25 1l-2.2 2.18Z"
+            fill="currentColor"
+          />
+        </svg>
+        Kontakt aufnehmen
+      </span>
       <span className="sr-only">Kontakt</span>
-      <svg viewBox="0 0 24 24" className="m-auto h-5 w-5" aria-hidden="true">
-        <path
-          d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.08.36 2.23.55 3.42.55a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4.2a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.19.19 2.34.55 3.42a1 1 0 0 1-.25 1l-2.2 2.18Z"
-          fill="currentColor"
-        />
-      </svg>
     </Link>
   );
 }
