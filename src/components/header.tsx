@@ -25,8 +25,11 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Link href="/kontakt" className="rounded-md bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
-              Kontakt
+            <Link
+              href="/kontakt"
+              className="hidden rounded-md bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600 md:inline-flex"
+            >
+              Anfrage starten
             </Link>
             <button
               type="button"
@@ -60,13 +63,6 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/kontakt"
-              className="block rounded-md bg-brand-500 px-3 py-2 text-sm font-semibold text-white hover:bg-brand-600"
-              onClick={() => setIsOpen(false)}
-            >
-              Kontakt aufnehmen
-            </Link>
           </nav>
         ) : null}
       </Container>

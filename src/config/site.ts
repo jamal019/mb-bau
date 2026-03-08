@@ -1,17 +1,17 @@
 export const siteConfig = {
-  siteName: 'MB Bauausführungen GmbH',
+  siteName: 'MB Bauausfuehrungen GmbH',
   domain: 'https://jamal019.github.io/mb-bau',
-  defaultTitle: 'MB Bauausführungen GmbH | Bauunternehmen in Berlin',
+  defaultTitle: 'MB Bauausfuehrungen GmbH | Bauunternehmen in Berlin',
   defaultDescription:
-    'MB Bauausführungen GmbH ist Ihr Partner für Putz- und Estricharbeiten sowie Fassadenarbeiten in Berlin. Zuverlässig, termintreu und aus einer Hand.',
+    'MB Bauausfuehrungen GmbH ist Ihr Partner fuer Putz- und Estricharbeiten sowie Fassadenarbeiten in Berlin. Zuverlaessig, termintreu und aus einer Hand.',
   company: {
-    name: 'MB Bauausführungen GmbH',
+    name: 'MB Bauausfuehrungen GmbH',
     managingDirector: 'Mahmut Ruhi Bayrak',
     phoneDisplay: '01523 8204702',
     phoneHref: 'tel:+4915238204702',
     email: 'info@mb-bauausfuehrungen.de',
     address: {
-      streetAddress: 'Bessemerstraße 82',
+      streetAddress: 'Bessemerstrasse 82',
       postalCode: '12103',
       addressLocality: 'Berlin',
       addressCountry: 'DE'
@@ -24,9 +24,8 @@ export const siteConfig = {
 } as const;
 
 export const navItems = [
-  { label: 'Landing', href: '/landing' },
   { label: 'Leistungen', href: '/leistungen' },
   { label: 'Referenzen', href: '/referenzen' },
-  { label: 'Über uns', href: '/ueber-uns' },
+  { label: 'Ueber uns', href: '/ueber-uns' },
   { label: 'Kontakt', href: '/kontakt' }
 ] as const;
