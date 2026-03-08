@@ -2,7 +2,7 @@
 title: "Putz & Estrich"
 excerpt: "Saubere Putzarbeiten und belastbare Estrichflächen für Wohn- und Gewerbeobjekte."
 order: 1
-image: "/placeholders/service-sanierung.svg"
+image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
 seoTitle: "Putz & Estrich in Berlin"
 seoDescription: "Putz- und Estricharbeiten in Berlin mit präziser Ausführung und klarer Terminplanung."
 ---

@@ -24,6 +24,7 @@ export const siteConfig = {
 } as const;
 
 export const navItems = [
+  { label: 'Landing', href: '/landing' },
   { label: 'Leistungen', href: '/leistungen' },
   { label: 'Referenzen', href: '/referenzen' },
   { label: 'Über uns', href: '/ueber-uns' },

@@ -13,6 +13,12 @@ const nextConfig: NextConfig = {
   assetPrefix: isGithubPagesBuild ? `${basePath}/` : undefined,
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com'
+      }
+    ],
     formats: ['image/avif', 'image/webp']
   }
 };

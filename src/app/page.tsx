@@ -22,8 +22,8 @@ export default function HomePage() {
               Qualitätsarbeit für Putz, Estrich und Fassade
             </h1>
             <p className="mt-6 max-w-reading text-lg text-slate-600">
-              {siteConfig.company.name} realisiert Bauprojekte im Bestand und Neubau mit klarem Prozess,
-              verbindlichen Zeitplänen und sauberer Ausführung.
+              {siteConfig.company.name} realisiert Bauprojekte im Bestand und Neubau mit klarem Prozess, verbindlichen
+              Zeitplänen und sauberer Ausführung.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button href="/kontakt">Angebot anfragen</Button>
@@ -34,7 +34,7 @@ export default function HomePage() {
           </div>
           <div className="relative h-[340px] overflow-hidden rounded-xl shadow-soft sm:h-[420px]">
             <Image
-              src="/placeholders/hero-construction.svg"
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80"
               alt="Baustelle in Berlin"
               fill
               priority
