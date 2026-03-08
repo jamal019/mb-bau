@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description: siteConfig.defaultDescription,
     images: [
       {
-        url: '/placeholders/og-default.svg',
+        url: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80',
         width: 1200,
         height: 630,
         alt: siteConfig.company.name
