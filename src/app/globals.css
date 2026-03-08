@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+a {
+  text-underline-offset: 4px;
+}
+
+.prose-content h2 {
+  @apply mt-8 text-2xl font-semibold text-slate-900;
+}
+
+.prose-content h3 {
+  @apply mt-6 text-xl font-semibold text-slate-900;
+}
+
+.prose-content p {
+  @apply mt-4 text-slate-700;
+}
+
+.prose-content ul {
+  @apply mt-4 list-disc space-y-2 pl-5 text-slate-700;
+}
