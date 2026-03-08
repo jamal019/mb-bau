@@ -4,6 +4,7 @@ import './globals.css';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { LocalBusinessJsonLd } from '@/components/local-business-jsonld';
+import { MobileCallButton } from '@/components/mobile-call-button';
 import { siteConfig } from '@/config/site';
 
 const inter = Inter({
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <LocalBusinessJsonLd />
         <Header />
         <main>{children}</main>
+        <MobileCallButton />
         <Footer />
       </body>
     </html>
