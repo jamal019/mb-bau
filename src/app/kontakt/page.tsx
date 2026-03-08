@@ -5,13 +5,13 @@ import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
   title: 'Kontakt',
-  description: 'Kontaktieren Sie die MB Bauausfuehrungen GmbH fuer Ihr Bauvorhaben in Berlin.',
+  description: 'Kontaktieren Sie die MB Bauausführungen GmbH für Ihr Bauvorhaben in Berlin.',
   alternates: {
     canonical: '/kontakt'
   },
   openGraph: {
-    title: 'Kontakt | MB Bauausfuehrungen GmbH',
-    description: 'Telefon, E-Mail und Karte fuer Ihre Anfrage.',
+    title: 'Kontakt | MB Bauausführungen GmbH',
+    description: 'Telefon, E-Mail und Karte für Ihre Anfrage.',
     url: `${siteConfig.domain}/kontakt`
   }
 };
@@ -55,14 +55,14 @@ export default function ContactPage() {
                 rel="noreferrer"
                 className="inline-flex rounded-md border border-white/30 px-3 py-2 text-sm font-semibold text-white hover:bg-white/10"
               >
-                In Google Maps oeffnen
+                In Google Maps öffnen
               </Link>
             </p>
           </div>
         </div>
         <div className="relative min-h-[360px]">
           <iframe
-            title="Karte MB Bauausfuehrungen GmbH"
+            title="Karte MB Bauausführungen GmbH"
             src={mapsEmbedSrc}
             className="absolute inset-0 h-full w-full border-0"
             loading="lazy"

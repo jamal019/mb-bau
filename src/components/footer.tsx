@@ -24,7 +24,7 @@ export function Footer() {
         <div className="hidden gap-10 md:grid md:grid-cols-3">
           <div>
             <h2 className="text-base font-semibold text-slate-900">{siteConfig.company.name}</h2>
-            <p className="mt-3 text-sm text-slate-600">Geschaeftsfuehrer: {siteConfig.company.managingDirector}</p>
+            <p className="mt-3 text-sm text-slate-600">Geschäftsführer: {siteConfig.company.managingDirector}</p>
             <p className="mt-2 text-sm text-slate-600">
               {siteConfig.company.address.streetAddress}, {siteConfig.company.address.postalCode}{' '}
               {siteConfig.company.address.addressLocality}

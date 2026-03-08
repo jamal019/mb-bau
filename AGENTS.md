@@ -1,4 +1,4 @@
-# AGENTS.md
+﻿# AGENTS.md
 
 ## Project Overview
 
@@ -156,6 +156,7 @@ Reference style direction:
 ## Content Principles
 
 All copy should be written in **German** unless explicitly requested otherwise.
+Use proper German umlauts in visible text: always prefer `ä`, `ö`, `ü`, `Ä`, `Ö`, `Ü`, `ß` instead of `ae`, `oe`, `ue`, `ss`.
 
 The content should sound:
 
@@ -407,3 +408,5 @@ This repository should remain a:
 for **MB Bauausführungen GmbH**.
 
 All changes should support that goal.
+
+

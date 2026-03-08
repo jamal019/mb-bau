@@ -34,7 +34,7 @@ export function Header() {
             <button
               type="button"
               className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-300 text-slate-700 md:hidden"
-              aria-label="Navigation oeffnen"
+              aria-label="Navigation öffnen"
               aria-expanded={isOpen}
               onClick={() => setIsOpen((open) => !open)}
             >
