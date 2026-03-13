@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { ContactMapEmbed } from '@/components/contact-map-embed';
 import { Section } from '@/components/section';
 import { siteConfig } from '@/config/site';
 
@@ -48,27 +49,19 @@ export default function ContactPage() {
                 {siteConfig.company.email}
               </Link>
             </p>
-            <p>
+            <p className="pt-2">
               <Link
                 href={mapsDirectionsHref}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex rounded-md border border-white/30 px-3 py-2 text-sm font-semibold text-white hover:bg-white/10"
+                className="inline-flex rounded-full border border-white/30 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
               >
                 In Google Maps öffnen
               </Link>
             </p>
           </div>
         </div>
-        <div className="relative min-h-[360px]">
-          <iframe
-            title="Karte MB Bauausführungen GmbH"
-            src={mapsEmbedSrc}
-            className="absolute inset-0 h-full w-full border-0"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
+        <ContactMapEmbed embedSrc={mapsEmbedSrc} title="Karte MB Bauausführungen GmbH" />
       </div>
     </Section>
   );
