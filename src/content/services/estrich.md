@@ -2,7 +2,7 @@
 title: "Estrich"
 excerpt: "Belastbare Estrichflächen mit präziser Höhenführung für Wohnungsbau, Gewerbe und Sanierung."
 order: 2
-image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80"
+image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
 seoTitle: "Estricharbeiten in Berlin"
 seoDescription: "Estricharbeiten in Berlin mit präziser Ausführung und sauberer Baustellenabwicklung."
 ---

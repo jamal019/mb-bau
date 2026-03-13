@@ -2,7 +2,7 @@
 title: "Innenputz"
 excerpt: "Saubere Innenputzarbeiten für gleichmäßige Wandflächen und eine belastbare Grundlage im Ausbau."
 order: 1
-image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80"
 seoTitle: "Innenputz in Berlin"
 seoDescription: "Professionelle Innenputzarbeiten in Berlin für Wohn- und Gewerbeobjekte."
 ---

@@ -2,7 +2,7 @@
 title: "Verlegearbeiten"
 excerpt: "Präzise Verlegearbeiten für belastbare, optisch saubere und dauerhaft nutzbare Flächen."
 order: 5
-image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80"
+image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
 seoTitle: "Verlegearbeiten in Berlin"
 seoDescription: "Verlegearbeiten in Berlin mit präziser Ausführung für Wohn- und Gewerbeobjekte."
 ---
