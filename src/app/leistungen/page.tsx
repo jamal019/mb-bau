@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Leistungen | MB Bauausführungen GmbH',
-    description: 'Putz- und Estricharbeiten sowie Fassadenarbeiten aus einer Hand.',
+    description: 'Innenputz, Estrich, Malerarbeiten, Fassadenarbeiten und Verlegearbeiten aus einer Hand.',
     url: `${siteConfig.domain}/leistungen`
   }
 };

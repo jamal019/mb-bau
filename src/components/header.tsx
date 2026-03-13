@@ -15,7 +15,7 @@ export function Header() {
       <Container className="py-4">
         <div className="flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl bg-white/95 shadow-soft ring-1 ring-white/10">
+            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl">
               <Image
                 src={assetPath('/brand/mb-bau-logo.svg')}
                 alt="MB Bau Logo"
@@ -28,7 +28,7 @@ export function Header() {
             <div className="min-w-0">
               <p className="truncate text-base font-extrabold tracking-tight text-white sm:text-lg">MB Bauausführungen GmbH</p>
               <p className="hidden text-xs font-medium uppercase tracking-[0.22em] text-brand-100/80 sm:block">
-                Berlin · Putz · Estrich · Fassade
+                Berlin · Bauausführung
               </p>
             </div>
           </Link>

@@ -10,7 +10,7 @@ import { getAllProjects, getAllServices } from '@/lib/content';
 import { assetPath } from '@/lib/asset-path';
 
 export default function HomePage() {
-  const services = getAllServices().slice(0, 4);
+  const services = getAllServices();
   const projects = getAllProjects().slice(0, 3);
 
   return (
@@ -20,7 +20,7 @@ export default function HomePage() {
           <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
             <div>
               <div className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur">
-                <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white">
+                <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full">
                   <Image
                     src={assetPath('/brand/mb-bau-logo.svg')}
                     alt="MB Bau Logo"
@@ -32,7 +32,7 @@ export default function HomePage() {
                 </span>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">MB Bau</p>
-                  <p className="text-sm text-white/80">Berlin · Putz · Estrich · Fassade</p>
+                  <p className="text-sm text-white/80">Berlin · Bauausführung</p>
                 </div>
               </div>
 
@@ -41,8 +41,8 @@ export default function HomePage() {
                 Qualitätsarbeit mit klarer Kante.
               </h1>
               <p className="mt-6 max-w-reading text-lg leading-8 text-white/78">
-                {siteConfig.company.name} realisiert Putz-, Estrich- und Fassadenarbeiten mit verlässlicher Planung,
-                sauberer Ausführung und einem starken Blick fürs Detail.
+                {siteConfig.company.name} realisiert Innenputz, Estrich, Malerarbeiten, Fassadenarbeiten und
+                Verlegearbeiten mit verlässlicher Planung, sauberer Ausführung und einem starken Blick fürs Detail.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <Button href="/kontakt">Projekt anfragen</Button>
@@ -78,7 +78,7 @@ export default function HomePage() {
       </section>
 
       <Section title="Unsere Leistungen" description="Leistungsbereiche mit klarer Spezialisierung und sauberer Umsetzung.">
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => (
             <Card
               key={service.slug}
@@ -131,7 +131,9 @@ export default function HomePage() {
         <div className="space-y-6 rounded-[2rem] border border-dusk/10 bg-white/75 p-8 shadow-soft backdrop-blur">
           <article>
             <h3 className="text-lg font-semibold text-ink">Welche Leistungen bieten Sie an?</h3>
-            <p className="mt-2 text-slate-700">Unser Schwerpunkt liegt auf Putz- und Estricharbeiten sowie Fassadenarbeiten.</p>
+            <p className="mt-2 text-slate-700">
+              Unser Schwerpunkt liegt auf Innenputz, Estrich, Malerarbeiten, Fassadenarbeiten und Verlegearbeiten.
+            </p>
           </article>
           <article>
             <h3 className="text-lg font-semibold text-ink">In welchem Gebiet sind Sie tätig?</h3>

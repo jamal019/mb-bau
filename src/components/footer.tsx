@@ -10,7 +10,7 @@ export function Footer() {
       <Container className="py-6 md:py-12">
         <div className="space-y-4 md:hidden">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl bg-white">
+            <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl">
               <Image
                 src={assetPath('/brand/mb-bau-logo.svg')}
                 alt="MB Bau Logo"
@@ -38,7 +38,7 @@ export function Footer() {
         <div className="hidden gap-10 md:grid md:grid-cols-[1.2fr_0.9fr_0.9fr]">
           <div>
             <div className="flex items-center gap-4">
-              <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-3xl bg-white shadow-soft">
+              <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-3xl">
                 <Image
                   src={assetPath('/brand/mb-bau-logo.svg')}
                   alt="MB Bau Logo"

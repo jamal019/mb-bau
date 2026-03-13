@@ -3,7 +3,7 @@ export const siteConfig = {
   domain: 'https://jamal019.github.io/mb-bau',
   defaultTitle: 'MB Bauausführungen GmbH | Bauunternehmen in Berlin',
   defaultDescription:
-    'MB Bauausführungen GmbH ist Ihr Partner für Putz- und Estricharbeiten sowie Fassadenarbeiten in Berlin. Zuverlässig, termintreu und aus einer Hand.',
+    'MB Bauausführungen GmbH ist Ihr Partner für Innenputz, Estrich, Malerarbeiten, Fassadenarbeiten und Verlegearbeiten in Berlin. Zuverlässig, termintreu und aus einer Hand.',
   company: {
     name: 'MB Bauausführungen GmbH',
     managingDirector: 'Mahmut Ruhi Bayrak',
