@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Container } from '@/components/container';
 import { siteConfig } from '@/config/site';
+import { assetPath } from '@/lib/asset-path';
 
 export function Footer() {
   return (
@@ -10,7 +11,14 @@ export function Footer() {
         <div className="space-y-4 md:hidden">
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl bg-white">
-              <Image src="/brand/mb-bau-logo.svg" alt="MB Bau Logo" width={30} height={30} className="h-8 w-8 object-contain" />
+              <Image
+                src={assetPath('/brand/mb-bau-logo.svg')}
+                alt="MB Bau Logo"
+                width={32}
+                height={32}
+                unoptimized
+                className="h-8 w-8 object-contain"
+              />
             </div>
             <p className="font-semibold text-white">{siteConfig.company.name}</p>
           </div>
@@ -31,7 +39,14 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-4">
               <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-3xl bg-white shadow-soft">
-                <Image src="/brand/mb-bau-logo.svg" alt="MB Bau Logo" width={38} height={38} className="h-10 w-10 object-contain" />
+                <Image
+                  src={assetPath('/brand/mb-bau-logo.svg')}
+                  alt="MB Bau Logo"
+                  width={40}
+                  height={40}
+                  unoptimized
+                  className="h-10 w-10 object-contain"
+                />
               </div>
               <div>
                 <h2 className="text-lg font-semibold text-white">{siteConfig.company.name}</h2>

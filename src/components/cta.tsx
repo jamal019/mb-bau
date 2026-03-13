@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Button } from '@/components/button';
 import { Container } from '@/components/container';
 import { siteConfig } from '@/config/site';
+import { assetPath } from '@/lib/asset-path';
 
 type CtaProps = {
   title?: string;
@@ -18,7 +19,14 @@ export function Cta({
         <div className="flex flex-col gap-8 px-6 sm:flex-row sm:items-center sm:justify-between sm:px-10">
           <div className="max-w-reading">
             <div className="mb-4 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/10 px-4 py-2">
-              <Image src="/brand/mb-bau-logo.svg" alt="MB Bau Logo" width={28} height={28} className="h-7 w-7 object-contain" />
+              <Image
+                src={assetPath('/brand/mb-bau-logo.svg')}
+                alt="MB Bau Logo"
+                width={28}
+                height={28}
+                unoptimized
+                className="h-7 w-7 object-contain"
+              />
               <span className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">MB Bau</span>
             </div>
             <h2 className="text-3xl font-semibold tracking-tight">{title}</h2>

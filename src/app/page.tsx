@@ -7,6 +7,7 @@ import { Cta } from '@/components/cta';
 import { Section } from '@/components/section';
 import { siteConfig } from '@/config/site';
 import { getAllProjects, getAllServices } from '@/lib/content';
+import { assetPath } from '@/lib/asset-path';
 
 export default function HomePage() {
   const services = getAllServices().slice(0, 4);
@@ -20,7 +21,14 @@ export default function HomePage() {
             <div>
               <div className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur">
                 <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white">
-                  <Image src="/brand/mb-bau-logo.svg" alt="MB Bau Logo" width={28} height={28} className="h-7 w-7 object-contain" />
+                  <Image
+                    src={assetPath('/brand/mb-bau-logo.svg')}
+                    alt="MB Bau Logo"
+                    width={28}
+                    height={28}
+                    unoptimized
+                    className="h-7 w-7 object-contain"
+                  />
                 </span>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">MB Bau</p>

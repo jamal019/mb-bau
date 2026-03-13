@@ -1,8 +1,8 @@
-import { Metadata } from 'next';
 import Image from 'next/image';
+import { Metadata } from 'next';
 import Link from 'next/link';
-import { ContactMapEmbed } from '@/components/contact-map-embed';
 import { Section } from '@/components/section';
+import { assetPath } from '@/lib/asset-path';
 import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
@@ -29,7 +29,14 @@ export default function ContactPage() {
         <div className="bg-[linear-gradient(180deg,#232D44_0%,#244A86_100%)] p-8 text-white">
           <div className="flex items-center gap-3">
             <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl bg-white">
-              <Image src="/brand/mb-bau-logo.svg" alt="MB Bau Logo" width={30} height={30} className="h-8 w-8 object-contain" />
+              <Image
+                src={assetPath('/brand/mb-bau-logo.svg')}
+                alt="MB Bau Logo"
+                width={32}
+                height={32}
+                unoptimized
+                className="h-8 w-8 object-contain"
+              />
             </div>
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">MB Bau</p>
@@ -71,7 +78,15 @@ export default function ContactPage() {
             </p>
           </div>
         </div>
-        <ContactMapEmbed embedSrc={mapsEmbedSrc} title="Karte MB Bauausführungen GmbH" />
+        <div className="relative min-h-[360px] bg-slate-100 lg:min-h-full">
+          <iframe
+            title="Karte MB Bauausführungen GmbH"
+            src={mapsEmbedSrc}
+            className="absolute inset-0 h-full w-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
       </div>
     </Section>
   );

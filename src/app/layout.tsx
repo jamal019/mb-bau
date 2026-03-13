@@ -6,6 +6,7 @@ import { Header } from '@/components/header';
 import { LocalBusinessJsonLd } from '@/components/local-business-jsonld';
 import { MobileCallButton } from '@/components/mobile-call-button';
 import { siteConfig } from '@/config/site';
+import { assetPath } from '@/lib/asset-path';
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -23,9 +24,9 @@ export const metadata: Metadata = {
     canonical: '/'
   },
   icons: {
-    icon: '/brand/mb-bau-logo.svg',
-    shortcut: '/brand/mb-bau-logo.svg',
-    apple: '/brand/mb-bau-logo.svg'
+    icon: assetPath('/brand/mb-bau-logo.svg'),
+    shortcut: assetPath('/brand/mb-bau-logo.svg'),
+    apple: assetPath('/brand/mb-bau-logo.svg')
   },
   openGraph: {
     type: 'website',
