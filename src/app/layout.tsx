@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import type { Metadata, Viewport } from 'next';
+import { Manrope } from 'next/font/google';
 import './globals.css';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
@@ -7,7 +7,7 @@ import { LocalBusinessJsonLd } from '@/components/local-business-jsonld';
 import { MobileCallButton } from '@/components/mobile-call-button';
 import { siteConfig } from '@/config/site';
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ['latin'],
   display: 'swap'
 });
@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   description: siteConfig.defaultDescription,
   alternates: {
     canonical: '/'
+  },
+  icons: {
+    icon: '/brand/mb-bau-logo.svg',
+    shortcut: '/brand/mb-bau-logo.svg',
+    apple: '/brand/mb-bau-logo.svg'
   },
   openGraph: {
     type: 'website',
@@ -44,10 +49,14 @@ export const metadata: Metadata = {
   }
 };
 
+export const viewport: Viewport = {
+  themeColor: '#232D44'
+};
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="de">
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${manrope.className} antialiased`}>
         <LocalBusinessJsonLd />
         <Header />
         <main>{children}</main>

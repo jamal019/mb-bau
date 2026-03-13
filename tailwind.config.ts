@@ -15,16 +15,23 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          50: '#f4f7fa',
-          100: '#e8eef4',
-          500: '#1f4e79',
-          600: '#173c5f',
-          700: '#122f4b'
+          50: '#F7EED3',
+          100: '#BACFED',
+          200: '#ECD87F',
+          500: '#244A86',
+          600: '#232D44',
+          700: '#232D44'
         },
-        accent: '#d78628'
+        accent: '#ECD87F',
+        ink: '#232D44',
+        mist: '#BACFED',
+        cream: '#F7EED3',
+        gold: '#ECD87F',
+        dusk: '#244A86',
+        indigo: '#232D44'
       },
       boxShadow: {
-        soft: '0 12px 32px rgba(20, 40, 60, 0.08)'
+        soft: '0 18px 48px rgba(35, 45, 68, 0.14)'
       },
       maxWidth: {
         reading: '72ch'

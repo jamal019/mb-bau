@@ -10,13 +10,13 @@ type ButtonProps = {
 export function Button({ href, children, variant = 'primary' }: ButtonProps) {
   const styles =
     variant === 'primary'
-      ? 'bg-brand-500 text-white hover:bg-brand-600'
-      : 'bg-white text-brand-700 ring-1 ring-brand-200 hover:bg-brand-50';
+      ? 'rounded-full bg-gold text-ink shadow-soft hover:bg-cream'
+      : 'rounded-full bg-white/10 text-white ring-1 ring-white/30 backdrop-blur hover:bg-white/20';
 
   return (
     <Link
       href={href}
-      className={`inline-flex items-center justify-center rounded-md px-5 py-3 text-sm font-semibold transition ${styles}`}
+      className={`inline-flex items-center justify-center px-5 py-3 text-sm font-semibold transition ${styles}`}
     >
       {children}
     </Link>

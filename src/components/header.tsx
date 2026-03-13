@@ -1,24 +1,33 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Container } from '@/components/container';
-import { navItems, siteConfig } from '@/config/site';
+import { navItems } from '@/config/site';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-white/40 bg-[rgba(247,238,211,0.88)] backdrop-blur-xl">
       <Container className="py-4">
         <div className="flex items-center justify-between gap-4">
-          <Link href="/" className="text-lg font-semibold tracking-tight text-slate-900 sm:text-xl">
-            {siteConfig.company.name}
+          <Link href="/" className="flex items-center gap-3">
+            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl bg-white shadow-soft ring-1 ring-black/5">
+              <Image src="/brand/mb-bau-logo.svg" alt="MB Bau Logo" width={40} height={40} className="h-10 w-10 object-contain" />
+            </div>
+            <div className="min-w-0">
+              <p className="truncate text-base font-extrabold tracking-tight text-ink sm:text-lg">MB Bauausführungen GmbH</p>
+              <p className="hidden text-xs font-medium uppercase tracking-[0.22em] text-dusk/80 sm:block">
+                Berlin · Putz · Estrich · Fassade
+              </p>
+            </div>
           </Link>
 
-          <nav aria-label="Hauptnavigation" className="hidden items-center gap-6 md:flex">
+          <nav aria-label="Hauptnavigation" className="hidden items-center gap-7 md:flex">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className="text-sm font-medium text-slate-700 hover:text-brand-600">
+              <Link key={item.href} href={item.href} className="text-sm font-semibold text-ink transition hover:text-dusk">
                 {item.label}
               </Link>
             ))}
@@ -27,13 +36,13 @@ export function Header() {
           <div className="flex items-center gap-2">
             <Link
               href="/kontakt"
-              className="hidden rounded-md bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600 md:inline-flex"
+              className="hidden rounded-full bg-dusk px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo md:inline-flex"
             >
-              Anfrage starten
+              Projekt anfragen
             </Link>
             <button
               type="button"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-300 text-slate-700 md:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-dusk/20 bg-white text-ink shadow-soft md:hidden"
               aria-label="Navigation öffnen"
               aria-expanded={isOpen}
               onClick={() => setIsOpen((open) => !open)}
@@ -52,12 +61,12 @@ export function Header() {
         </div>
 
         {isOpen ? (
-          <nav aria-label="Mobile Navigation" className="mt-4 space-y-2 border-t border-slate-200 pt-4 md:hidden">
+          <nav aria-label="Mobile Navigation" className="mt-4 space-y-2 rounded-3xl border border-dusk/10 bg-white/90 p-3 shadow-soft md:hidden">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="block rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100"
+                className="block rounded-2xl px-4 py-3 text-sm font-semibold text-ink transition hover:bg-brand-50 hover:text-dusk"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ContactMapEmbed } from '@/components/contact-map-embed';
 import { Section } from '@/components/section';
@@ -24,9 +25,18 @@ export default function ContactPage() {
 
   return (
     <Section title="Kontakt" description="So erreichen Sie uns direkt per Telefon, E-Mail oder vor Ort.">
-      <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-soft lg:grid lg:grid-cols-[360px_minmax(0,1fr)]">
-        <div className="bg-brand-700 p-8 text-white">
-          <h2 className="text-3xl font-semibold tracking-tight">So erreichen Sie uns</h2>
+      <div className="overflow-hidden rounded-[2rem] border border-dusk/10 bg-white/85 shadow-soft backdrop-blur lg:grid lg:grid-cols-[360px_minmax(0,1fr)]">
+        <div className="bg-[linear-gradient(180deg,#232D44_0%,#244A86_100%)] p-8 text-white">
+          <div className="flex items-center gap-3">
+            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl bg-white">
+              <Image src="/brand/mb-bau-logo.svg" alt="MB Bau Logo" width={30} height={30} className="h-8 w-8 object-contain" />
+            </div>
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">MB Bau</p>
+              <p className="text-sm text-white/72">So erreichen Sie uns</p>
+            </div>
+          </div>
+
           <div className="mt-8 space-y-5 text-brand-50">
             <p className="font-semibold text-white">{siteConfig.company.name}</p>
             <p>
@@ -36,7 +46,7 @@ export default function ContactPage() {
             </p>
             <p>
               <strong>Telefon:</strong>{' '}
-              <Link href={siteConfig.company.phoneHref} className="underline decoration-white/50 underline-offset-4 hover:text-white">
+              <Link href={siteConfig.company.phoneHref} className="underline decoration-white/50 underline-offset-4 hover:text-gold">
                 {siteConfig.company.phoneDisplay}
               </Link>
             </p>
@@ -44,7 +54,7 @@ export default function ContactPage() {
               <strong>E-Mail:</strong>{' '}
               <Link
                 href={`mailto:${siteConfig.company.email}`}
-                className="underline decoration-white/50 underline-offset-4 hover:text-white"
+                className="underline decoration-white/50 underline-offset-4 hover:text-gold"
               >
                 {siteConfig.company.email}
               </Link>
@@ -54,7 +64,7 @@ export default function ContactPage() {
                 href={mapsDirectionsHref}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex rounded-full border border-white/30 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+                className="inline-flex rounded-full bg-gold px-4 py-2 text-sm font-semibold text-ink transition hover:bg-cream"
               >
                 In Google Maps öffnen
               </Link>

@@ -21,7 +21,7 @@ export function MobileCallButton() {
     <Link
       href="/kontakt"
       aria-label="Zur Kontaktseite"
-      className={`fixed left-1/2 z-40 -translate-x-1/2 rounded-full bg-brand-600 px-5 py-3 text-white shadow-[0_10px_28px_rgba(15,23,42,0.3)] transition-all duration-200 md:hidden ${
+      className={`fixed left-1/2 z-40 -translate-x-1/2 rounded-full bg-gold px-5 py-3 text-ink shadow-[0_14px_32px_rgba(35,45,68,0.24)] transition-all duration-200 md:hidden ${
         isVisible
           ? 'pointer-events-auto bottom-[max(0.9rem,env(safe-area-inset-bottom))] opacity-100'
           : 'pointer-events-none bottom-0 opacity-0'

@@ -4,6 +4,11 @@
 
 :root {
   color-scheme: light;
+  --brand-gold: #ecd87f;
+  --brand-dusk: #244a86;
+  --brand-indigo: #232d44;
+  --brand-powder: #bacfed;
+  --brand-cream: #f7eed3;
 }
 
 html,
@@ -13,20 +18,28 @@ body {
 }
 
 body {
-  background: #ffffff;
-  color: #0f172a;
+  background:
+    radial-gradient(circle at top left, rgba(236, 216, 127, 0.24), transparent 28%),
+    radial-gradient(circle at top right, rgba(186, 207, 237, 0.34), transparent 34%),
+    linear-gradient(180deg, #fffdf6 0%, var(--brand-cream) 100%);
+  color: var(--brand-indigo);
 }
 
 a {
   text-underline-offset: 4px;
 }
 
+::selection {
+  background: rgba(236, 216, 127, 0.6);
+  color: var(--brand-indigo);
+}
+
 .prose-content h2 {
-  @apply mt-8 text-2xl font-semibold text-slate-900;
+  @apply mt-8 text-2xl font-semibold text-ink;
 }
 
 .prose-content h3 {
-  @apply mt-6 text-xl font-semibold text-slate-900;
+  @apply mt-6 text-xl font-semibold text-ink;
 }
 
 .prose-content p {
